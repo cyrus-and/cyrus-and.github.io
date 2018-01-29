@@ -1,0 +1,6 @@
+{% assign result = include.text %}
+{% for tag in include.tags %}
+{% capture emph %}**{{ tag }}**{% endcapture %}
+{% assign result = result | replace: tag, emph %}
+{% endfor %}
+{{ result }}

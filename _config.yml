@@ -1,0 +1,12 @@
+name: Andrea Cardaci
+email: cyrus.and@gmail.com
+
+permalink: pretty
+
+collections:
+  - advisories
+
+exclude: ["/Gemfile", "/Makefile", "/README.md"]
+
+kramdown:
+  parse_block_html: true

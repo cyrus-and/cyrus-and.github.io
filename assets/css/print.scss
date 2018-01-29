@@ -1,0 +1,27 @@
+---
+---
+
+body {
+    font-family: sans, sans-serif;
+    font-size: 10pt;
+}
+
+a[href]:after {
+    // TODO basename? is it even possible?
+    content: " (" attr(href) ")";
+    font-weight: normal;
+}
+
+a:link, a:visited {
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+dd {
+    margin-bottom: 2.5mm;
+}
+
+#preamble {
+    display: none;
+}

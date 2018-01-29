@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>{{ page.title }}</title>
+
+        {% if page.description %}
+        <meta name="description" content="{{ page.description }}">
+        {% endif %}
+
+        <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADAAgMAAAAvsoSUAAAACVBMVEUAAADSaR6Y+5gC7as8AAAANElEQVRo3u3LMQEAAAgDIEta0pRW0HvwU/1UgiAIgiAIgiDEBgAAgKt5EgRBEARBEAQhNiynwvSm7WpaBgAAAABJRU5ErkJggg==">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+        <meta name="theme-color" content="#000000">
+        <link rel="manifest" href="/assets/manifest.json">
+
+        {% if page.url == '/' %}
+        <meta name="google-site-verification" content="J_T5kCVuZ5ozqh-8M5pSi1GQzxv1dGYOuDoCP6TQsuU">
+        {% endif %}
+
+        <link rel="stylesheet" href="/assets/css/{{ page.layout }}.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="/assets/css/print.css" type="text/css" media="print"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+    </head>
+    <body>
+        {{ content }}
+    </body>
+</html>

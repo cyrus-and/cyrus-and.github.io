@@ -1,0 +1,55 @@
+---
+---
+
+@import 'common';
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+a:link {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 799px) {
+    p, dd {
+        text-align: left;
+    }
+}
+
+@media (min-width: 800px) {
+     body {
+        margin: 0 auto;
+        width: 800px;
+     }
+
+     section > p, section > dl {
+        padding-left: 40px;
+    }
+}
+
+@media (min-width: 1300px) {
+    body {
+        width: 1200px;
+        column-count: 2;
+        column-gap: 10px;
+    }
+
+    section {
+        break-inside: avoid;
+    }
+
+    h1 {
+        column-span: all;
+    }
+
+    /* XXX hack */
+    #bio {
+        margin-top: 0;
+    }
+}

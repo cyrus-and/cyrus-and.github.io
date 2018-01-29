@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<title>¯\_(ツ)_/¯</title>
+<script>
+ const path = `../pages${location.pathname}`;
+ document.write(`
+<br />
+<b>Warning</b>:  include(${path}): failed to open stream: No such file or directory in <b>/var/www/html/index.php</b> on line <b>42</b><br />
+<br />
+<b>Warning</b>:  include(): Failed opening '${path}' for inclusion (include_path='.:/usr/share/php') in <b>/var/www/html/index.php</b> on line <b>42</b><br />
+`);
+</script>

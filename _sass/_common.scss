@@ -1,0 +1,99 @@
+$foreground: #a5a5a5;
+$background: #000000;
+$title: #d2691e;
+$section: #98fb98;
+$emphasis: #eedd82;
+$selection: #556b2f;
+$link: #00ffff;
+$code: #ff00ff;
+$dark: #111111;
+
+@mixin faint-highlighting($color, $swap: false) {
+    padding: 2px 4px;
+    border-radius: 4px;
+
+    $color1: darken(desaturate($color, 40%), 0%);
+    $color2: darken(desaturate($color, 40%), 45%);
+
+    @if $swap {
+        color: $color2;
+        background: $color1;
+    } @else {
+        color: $color1;
+        background: $color2;
+    }
+}
+
+html {
+    // REMs are relative to this
+    font-size: 16px; // needed for <code>
+}
+
+body {
+    font-family: Montserrat, sans, sans-serif;
+    color: $foreground;
+    background: $background;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    color: $title;
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+    color: $section;
+}
+
+p, li, dd, dt {
+    text-align: justify;
+    line-height: 1.618em;
+}
+
+strong {
+    color: $emphasis;
+}
+
+a:link, a:visited {
+    @include faint-highlighting($link);
+    font-weight: bold;
+}
+
+a:hover, a:active {
+    @include faint-highlighting($link, true);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+dl > dt {
+    color: $emphasis;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+code {
+    @include faint-highlighting($code);
+}
+
+pre {
+    font-size: 0.85rem;
+    background: $dark !important;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    padding: 4px 8px;
+}
+
+::selection {
+    background: $selection;
+}
