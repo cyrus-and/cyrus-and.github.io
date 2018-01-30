@@ -1,4 +1,4 @@
-{% if site.categories.advisories != null %}
+{% if site.categories.advisories %}
 
 <section>
 
