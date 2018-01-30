@@ -1,0 +1,19 @@
+- name: GitHub
+  url: https://github.com/cyrus-and
+  brief: Code goes here
+  tags: [Code]
+
+- name: Twitter
+  url: https://twitter.com/cyrus_and
+  brief: Social stuff
+  tags: [Social]
+
+- name: LinkedIn
+  url: https://www.linkedin.com/in/AndreaCardaci
+  brief: Professional profile
+  tags: [Professional]
+
+- name: Bēhance
+  url: https://www.behance.net/AndreaCardaci
+  brief: My attempt at photography
+  tags: [photography]

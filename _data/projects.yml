@@ -1,0 +1,43 @@
+- name: gdb-dashboard
+  brief: Modular visual interface for GDB in Python
+  tags: [GDB, Python]
+
+- name: chrome-remote-interface
+  brief: Chrome Debugging Protocol interface for Node.js
+  tags: [Chrome Debugging Protocol, Node.js]
+
+- name: chrome-har-capturer
+  brief: Capture HAR files from a remote Chrome instance
+  tags: [HAR, Chrome]
+
+- name: prof
+  brief: Self-contained C/C++ profiler library for Linux
+  tags: [C/C++ profiler, Linux]
+
+- name: mysql-unsha1
+  brief: Authenticate against a MySQL server without knowing the cleartext password
+  tags: [MySQL, password]
+
+- name: zoom
+  brief: Fixed and automatic balanced window layout for Emacs
+  tags: [automatic, Emacs]
+
+- name: gproxy
+  brief: googleusercontent.com as HTTP(S) proxy
+  tags: [googleusercontent.com, proxy]
+
+- name: trace
+  brief: Start or attach to a process and monitor a customizable set of metrics
+  tags: [monitor, metrics]
+
+- name: zizzania
+  brief: Automated DeAuth attack
+  tags: [DeAuth]
+
+- name: gdb
+  brief: Go GDB/MI interface
+  tags: [GDB/MI]
+
+- name: httpfs
+  brief: Remote FUSE filesystem via server-side script
+  tags: [FUSE, server-side]
