@@ -6,7 +6,7 @@ permalink: pretty
 collections:
   - advisories
 
-exclude: ["/Gemfile", "/Makefile", "/README.md"]
+exclude: ["/Gemfile", "/Makefile", "/README.md", "/CNAME"]
 
 kramdown:
   parse_block_html: true
