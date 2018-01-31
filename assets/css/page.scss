@@ -57,9 +57,11 @@ sup:target a.footnote {
     border-radius: 0;
 }
 
-@media (min-width: 800px) {
+$column-width: 800px;
+
+@media (min-width: $column-width) {
     body {
         margin: 0 auto;
-        width: 800px;
+        width: $column-width;
     }
 }
