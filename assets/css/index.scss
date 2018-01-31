@@ -48,8 +48,8 @@ a:link {
         column-span: all;
     }
 
-    /* XXX hack */
-    #bio {
+    // no margin for the first section
+    h1 + section h2 {
         margin-top: 0;
     }
 }
