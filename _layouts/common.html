@@ -18,9 +18,47 @@
         <meta name="google-site-verification" content="J_T5kCVuZ5ozqh-8M5pSi1GQzxv1dGYOuDoCP6TQsuU">
         {% endif %}
 
+        <script>
+         function show() {
+             document.documentElement.removeAttribute('style');
+         }
+
+         if (window.FontFace) {
+             const fontName = 'Montserrat';
+
+             const fontUrls = [
+                 'https://fonts.gstatic.com/s/montserrat/v12/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2',
+                 'https://fonts.gstatic.com/s/montserrat/v12/gFXtEMCp1m_YzxsBpKl68iEAvth_LlrfE80CYdSH47w.woff2'
+             ];
+
+             // initially hide everything
+             document.documentElement.style.visibility = 'hidden';
+
+             // start a bail timeout
+             setTimeout(show, 3000);
+
+             // load the web fonts
+             Promise.all(fontUrls.map((url) => {
+                 // create and start loading the font face
+                 const fontFace = new FontFace(fontName, `url(${url})`);
+                 return fontFace.load();
+             })).then((fontFaces) => {
+                 // add all the font faces to the document
+                 fontFaces.forEach((fontFace) => {
+                     document.fonts.add(fontFace);
+                 });
+                 // show the page
+                 show();
+             });
+         } else {
+             // obligatory fallback for microsoft stuff...
+             show();
+             document.write('<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>');
+         }
+        </script>
+
         <link rel="stylesheet" href="/assets/css/{{ page.layout }}.css" type="text/css" media="screen"/>
         <link rel="stylesheet" href="/assets/css/print.css" type="text/css" media="print"/>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
     </head>
     <body>
         {{ content }}
