@@ -9,4 +9,5 @@ tags: [MSc, Pisa]
 {% include contacts.md %}
 {% include profiles.md %}
 {% include advisories.md %}
+{% include meta.md %}
 {% include projects.md %}
