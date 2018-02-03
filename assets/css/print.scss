@@ -8,12 +8,11 @@ body {
 
 a[href]:after {
     // TODO basename? is it even possible?
-    content: " (" attr(href) ")";
+    content: " {" attr(href) "}";
     font-weight: normal;
 }
 
 a:link, a:visited {
-    font-weight: bold;
     color: #000000;
     text-decoration: none;
 }
