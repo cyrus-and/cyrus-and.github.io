@@ -51,6 +51,10 @@
                      });
                      // show the page
                      show();
+                 }).catch((err) => {
+                     // fall back on error
+                     console.error(err.toString());
+                     show();
                  });
              } else {
                  // obligatory fallback for microsoft stuff...
