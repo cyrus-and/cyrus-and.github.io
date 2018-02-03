@@ -4,6 +4,8 @@
 @import 'common';
 @import 'monokai';
 
+// footnotes
+
 %link-outline {
     outline: auto $link;
 }
@@ -49,6 +51,8 @@ sup:target a.footnote {
     @extend %link-outline;
 }
 
+// code blocks
+
 // reset <code> in code blocks
 .highlight code {
     color: inherit;
@@ -56,6 +60,8 @@ sup:target a.footnote {
     padding: 0;
     border-radius: 0;
 }
+
+// layout
 
 $column-width: 800px;
 
