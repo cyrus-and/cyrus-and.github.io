@@ -24,6 +24,10 @@ $dark: #111111;
     }
 }
 
+#container {
+    padding: 10px;
+}
+
 html {
     // REMs are relative to this
     font-size: 16px; // needed for <code>
@@ -37,7 +41,6 @@ body {
     overflow-wrap: break-word;
     box-sizing: border-box;
     margin: 0;
-    padding: 10px;
 }
 
 h1 {

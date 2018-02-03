@@ -34,8 +34,8 @@ $hard-swap-margin: 100px;
         width: $one-column-width;
      }
 
-     article {
-         section > p, section > dl {
+     #container {
+         .section > p, .section > dl {
              padding-left: 40px;
          }
      }
@@ -46,16 +46,16 @@ $hard-swap-margin: 100px;
         width: $two-column-width - $hard-swap-margin;
     }
 
-    article {
+    #container {
         column-count: 2;
         column-gap: 10px;
 
-        section {
+        .section {
             break-inside: avoid;
         }
 
         // no margin for the first section
-        section:first-child h2 {
+        .section:first-child h2 {
             margin-top: 0;
         }
     }

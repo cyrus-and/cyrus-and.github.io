@@ -1,4 +1,4 @@
-<section>
+<div class="section">
 
 ## Profiles
 
@@ -8,4 +8,4 @@
 : {{ brief | strip_newlines }}
 {% endfor %}
 
-</section>
+</div>

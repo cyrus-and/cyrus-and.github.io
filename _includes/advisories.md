@@ -1,6 +1,6 @@
 {% if site.categories.advisories %}
 
-<section>
+<div class="section">
 
 ## Advisories
 
@@ -18,6 +18,6 @@
 {% endif %}
 {% endfor %}
 
-</section>
+</div>
 
 {% endif %}

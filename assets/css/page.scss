@@ -4,7 +4,8 @@
 @import 'common';
 @import 'monokai';
 
-#preamble {
+#header {
+    padding: 10px;
     white-space: nowrap;
 }
 
@@ -70,7 +71,7 @@ sup:target a.footnote {
 $column-width: 800px;
 
 @media (min-width: $column-width) {
-    body {
+    #container {
         margin: 0 auto;
         width: $column-width;
     }

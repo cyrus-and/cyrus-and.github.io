@@ -1,7 +1,7 @@
-<section>
+<div class="section">
 
 ## Contacts
 
 [e-mail](mailto:{{ site.email }})
 
-</section>
+</div>
