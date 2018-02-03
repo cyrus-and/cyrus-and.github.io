@@ -34,29 +34,30 @@ $hard-swap-margin: 100px;
         width: $one-column-width;
      }
 
-     section > p, section > dl {
-        padding-left: 40px;
-    }
+     article {
+         section > p, section > dl {
+             padding-left: 40px;
+         }
+     }
 }
 
 @media (min-width: $two-column-width) {
     body {
         width: $two-column-width - $hard-swap-margin;
+    }
+
+    article {
         column-count: 2;
         column-gap: 10px;
-    }
 
-    section {
-        break-inside: avoid;
-    }
+        section {
+            break-inside: avoid;
+        }
 
-    h1 {
-        column-span: all;
-    }
-
-    // no margin for the first section
-    h1 + section h2 {
-        margin-top: 0;
+        // no margin for the first section
+        section:first-child h2 {
+            margin-top: 0;
+        }
     }
 }
 
