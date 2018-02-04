@@ -4,9 +4,17 @@
 @import 'common';
 @import 'monokai';
 
+// header
+
 #header {
     padding: 10px;
-    white-space: nowrap;
+    background: $dark;
+    color: $title;
+    border-bottom: 1px solid $title;
+
+    & > a {
+        display: inline-block;
+    }
 }
 
 // footnotes
