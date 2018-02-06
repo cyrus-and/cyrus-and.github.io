@@ -66,12 +66,17 @@
     }
 }
 
-a.footnote {
-    margin: 5px;
-}
+sup {
+    line-height: 0;
+    font-size: 62.5%;
 
-sup:target a.footnote {
-    @extend %link-outline;
+    a.footnote {
+        margin: 2px;
+    }
+
+    &:target a.footnote {
+        @extend %link-outline;
+    }
 }
 
 // code blocks
