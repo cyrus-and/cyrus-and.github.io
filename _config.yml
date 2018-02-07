@@ -6,6 +6,10 @@ permalink: pretty
 collections:
   - advisories
 
+defaults:
+  - values:
+      layout: "page"
+
 exclude: ["/Gemfile", "/Makefile", "/README.md", "/CNAME"]
 
 kramdown:
