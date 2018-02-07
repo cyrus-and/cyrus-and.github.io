@@ -71,12 +71,6 @@ a:hover, a:active {
     text-decoration: none;
 }
 
-dl > dt {
-    color: $emphasis;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
 code {
     @include faint-highlighting($code);
 }
@@ -108,4 +102,58 @@ td {
 
 ::-webkit-scrollbar-thumb {
     background: $title;
+}
+
+// lists
+
+$list-indentation: 40px;
+
+dl {
+    dt {
+        color: $emphasis;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    dd {
+        margin-left: $list-indentation;
+    }
+}
+
+%common-list {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding-left: 0;
+    list-style: none;
+    counter-reset: item;
+
+    li {
+        counter-increment: item;
+        display: table-row;
+
+        &::before {
+            display: table-cell;
+            box-sizing: border-box;
+            width: $list-indentation;
+            padding-right: 10px;
+            color: $emphasis;
+            text-align: right;
+        }
+    }
+}
+
+ol {
+    @extend %common-list;
+
+    li::before {
+        content: counter(item) ".";
+    }
+}
+
+ul {
+    @extend %common-list;
+
+    li::before {
+        content: "#";
+    }
 }

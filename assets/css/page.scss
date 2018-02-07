@@ -37,32 +37,8 @@
     font-size: 0.8rem;
     margin-top: 200px;
 
-    ol {
-        list-style: none;
-        padding-left: 0;
-        counter-reset: item;
-
-        li {
-            counter-increment: item;
-            padding: 10px;
-
-            p {
-                margin: 0;
-                text-indent: 10px;
-            }
-        }
-
-        li:target {
-            @extend %link-outline;
-        }
-
-        li::before {
-            float: left;
-            color: $emphasis;
-            font-weight: bold;
-            margin-right: 5px;
-            content: counter(item);
-        }
+    li:target {
+        @extend %link-outline;
     }
 }
 
