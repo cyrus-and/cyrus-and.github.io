@@ -7,6 +7,9 @@ $selection: #556b2f;
 $link: #00ffff;
 $code: #ff00ff;
 $dark: #111111;
+$faint: #666666;
+
+$indentation: 30px;
 
 @mixin faint-highlighting($color, $swap: false) {
     padding: 2px 4px;
@@ -82,6 +85,18 @@ pre {
     overflow-x: auto;
 }
 
+blockquote {
+    $marker-width: 5px;
+    $half: $indentation / 2 - $marker-width / 2;
+
+    border-left: $marker-width solid $title;
+    margin-left: $half;
+    padding-left: $half;
+    margin-right: $half;
+    font-style: italic;
+    color: $faint;
+}
+
 table {
     margin: 0 auto;
 }
@@ -106,8 +121,6 @@ td {
 
 // lists
 
-$list-indentation: 40px;
-
 dl {
     dt {
         color: $emphasis;
@@ -115,7 +128,7 @@ dl {
         margin-top: 10px;
     }
     dd {
-        margin-left: $list-indentation;
+        margin-left: $indentation;
     }
 }
 
@@ -134,7 +147,7 @@ dl {
         &::before {
             display: table-cell;
             box-sizing: border-box;
-            width: $list-indentation;
+            width: $indentation;
             padding-right: 10px;
             color: $emphasis;
             text-align: right;
