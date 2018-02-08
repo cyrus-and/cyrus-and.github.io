@@ -3,7 +3,6 @@ $background: #000000;
 $title: #d2691e;
 $section: #98fb98;
 $emphasis: #eedd82;
-$selection: #556b2f;
 $link: #00ffff;
 $code: #ff00ff;
 $dark: #111111;
@@ -103,10 +102,6 @@ table {
 
 td {
     padding: 4px 8px;
-}
-
-::selection {
-    background: $selection;
 }
 
 ::-webkit-scrollbar {
