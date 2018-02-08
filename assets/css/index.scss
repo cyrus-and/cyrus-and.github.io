@@ -3,11 +3,6 @@
 
 @import 'common';
 
-// no margin for the first section
-#container .section:first-child h2 {
-    margin-top: 0;
-}
-
 h1 {
     font-size: 2.5rem;
     margin: 30px 0;
@@ -17,8 +12,13 @@ h2 {
     font-size: 2rem;
 }
 
-a:link {
+a {
     font-size: 1.1rem;
+}
+
+// no margin for the first section
+#container .section:first-child h2 {
+    margin-top: 0;
 }
 
 // do not wrap the date in the post list
