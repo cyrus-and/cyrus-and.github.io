@@ -1,0 +1,12 @@
+<table class="post-list">
+{% for post in include.posts %}
+{% if post.url %}
+<tr>
+{% assign title = post.title %}
+{% capture title %}{% include tagify.liquid text=title tags=post.tags %}{% endcapture %}
+<td>{{ post.date | date_to_string }}</td>
+<td><a href="{{ post.url }}" markdown="1">{{ title | strip_newlines }}</a></td>
+</tr>
+{% endif %}
+{% endfor %}
+</table>
