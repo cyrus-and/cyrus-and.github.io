@@ -3,9 +3,6 @@ email: cyrus.and@gmail.com
 
 permalink: pretty
 
-collections:
-  - advisories
-
 defaults:
   - values:
       layout: "post"
