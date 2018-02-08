@@ -65,6 +65,16 @@ sup {
     border-radius: 0;
 }
 
+// tables
+
+// XXX hack needed by kramdown to hide the table head when it is only used to
+// set the column alignment
+table.no-head {
+    thead {
+        display: none;
+    }
+}
+
 // layout
 
 $column-width: 800px;
