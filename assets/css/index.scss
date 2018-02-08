@@ -25,6 +25,8 @@ a {
 // do not wrap the date in the post list
 table.post-list td:first-child {
     white-space: nowrap;
+    color: $faint;
+    font-size: 0.8rem;
 }
 
 $one-column-width: 600px;
