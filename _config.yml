@@ -8,7 +8,7 @@ collections:
 
 defaults:
   - values:
-      layout: "page"
+      layout: "post"
 
 exclude: ["/Gemfile", "/Makefile", "/README.md", "/CNAME"]
 
