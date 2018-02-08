@@ -34,14 +34,20 @@ $hard-swap-margin: 100px;
 }
 
 @media (min-width: $one-column-width) {
-     #container {
+    #container {
         width: $one-column-width;
         margin: 0 auto;
 
-        .section > p, .section > dl {
-             padding-left: 40px;
-         }
-     }
+        .section {
+            & > * {
+                margin-left: 40px;
+            }
+
+            & > h2 {
+                margin-left: 0;
+            }
+        }
+    }
 }
 
 @media (min-width: $two-column-width) {
