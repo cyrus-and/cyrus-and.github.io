@@ -28,6 +28,17 @@
     color: $faint;
 }
 
+table#advisory-header {
+    margin: 0 auto;
+    border-spacing: 10px 5px;
+
+    thead {
+        // XXX hack needed by kramdown to hide the table head when it is only
+        // used to set the column alignment
+        display: none;
+    }
+}
+
 #footer {
     @extend %bar;
     border-top: 1px solid $title;
@@ -69,16 +80,6 @@ sup {
     background: none;
     padding: 0;
     border-radius: 0;
-}
-
-// tables
-
-// XXX hack needed by kramdown to hide the table head when it is only used to
-// set the column alignment
-table.no-head {
-    thead {
-        display: none;
-    }
 }
 
 // layout
