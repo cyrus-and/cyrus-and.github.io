@@ -11,3 +11,6 @@ exclude: ["/Gemfile", "/Makefile", "/README.md", "/CNAME"]
 
 kramdown:
   parse_block_html: true
+
+plugins:
+  - jekyll-feed
