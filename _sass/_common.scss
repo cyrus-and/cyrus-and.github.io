@@ -77,6 +77,11 @@ code {
     @include faint-highlighting($code);
 }
 
+a code {
+    color: inherit;
+    background: none;
+}
+
 pre {
     font-size: 0.85rem;
     background: $dark !important;
