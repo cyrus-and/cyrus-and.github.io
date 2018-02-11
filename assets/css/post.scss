@@ -86,6 +86,12 @@ sup {
 
 $column-width: 800px;
 
+@media (max-width: $column-width - 1) {
+    pre {
+        margin: 0 - $container-padding;
+    }
+}
+
 @media (min-width: $column-width) {
     #container {
         margin: 0 auto;

@@ -9,6 +9,7 @@ $dark: #111111;
 $faint: #666666;
 
 $indentation: 30px;
+$container-padding: 10px;
 
 @mixin faint-highlighting($color, $swap: false) {
     padding: 2px 4px;
@@ -40,7 +41,7 @@ body {
 }
 
 #container {
-    padding: 0 10px;
+    padding: 0 $container-padding;
     box-sizing: border-box;
 }
 
