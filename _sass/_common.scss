@@ -37,6 +37,7 @@ body {
     color: $foreground;
     background: $background;
     overflow-x: hidden;
+    word-break: break-word;
     margin: 0;
 }
 
@@ -88,6 +89,7 @@ pre {
     background: $dark !important;
     padding: 10px;
     overflow-x: auto;
+    word-break: initial;
 }
 
 blockquote {
