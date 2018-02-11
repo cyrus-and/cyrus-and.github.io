@@ -17,11 +17,6 @@ a {
     font-size: 1.1rem;
 }
 
-// no margin for the first section
-#container .section:first-child h2 {
-    margin-top: 0;
-}
-
 // do not wrap the date in the post list
 table.post-list td:first-child {
     white-space: nowrap;
@@ -67,6 +62,9 @@ $hard-swap-margin: 100px;
 
         .section {
             break-inside: avoid;
+            // XXX hack to fix wrapped spacing
+            display: inline-block;
+            width: 100%
         }
     }
 }
