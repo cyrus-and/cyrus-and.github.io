@@ -9,7 +9,7 @@
 %bar {
     padding: 10px;
     background: $dark;
-    color: $title;
+    color: $accent;
     text-align: center;
 
     & > a {
@@ -19,7 +19,7 @@
 
 #header {
     @extend %bar;
-    border-bottom: 1px solid $title;
+    border-bottom: 1px solid $accent;
 }
 
 #post-date {
@@ -41,7 +41,7 @@ table#advisory-header {
 
 #footer {
     @extend %bar;
-    border-top: 1px solid $title;
+    border-top: 1px solid $accent;
 }
 
 // footnotes
@@ -61,7 +61,7 @@ table#advisory-header {
 
     &::before {
         display: block;
-        background: $title;
+        background: $accent;
         content: "";
         width: 10px;
         height: 10px;

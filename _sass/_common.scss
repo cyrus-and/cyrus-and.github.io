@@ -1,6 +1,6 @@
 $foreground: #a5a5a5;
 $background: #000000;
-$title: #d2691e;
+$accent: #d2691e;
 $section: #98fb98;
 $emphasis: #eedd82;
 $link: #00ffff;
@@ -47,7 +47,7 @@ body {
 }
 
 h1 {
-    color: $title;
+    color: $accent;
     text-align: center;
 }
 
@@ -96,7 +96,7 @@ blockquote {
     $marker-width: 5px;
     $half: $indentation / 2 - $marker-width / 2;
 
-    border-left: $marker-width solid $title;
+    border-left: $marker-width solid $accent;
     margin-left: $half;
     padding-left: $half;
     margin-right: $half;
@@ -111,7 +111,7 @@ blockquote {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $title;
+    background: $accent;
 }
 
 // lists
