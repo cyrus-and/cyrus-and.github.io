@@ -55,6 +55,10 @@ table#advisory-header {
     padding-top: 100px;
     position: relative;
 
+    p {
+        margin: 5px 0;
+    }
+
     li:target {
         @extend %link-outline;
     }
