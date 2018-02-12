@@ -17,6 +17,10 @@ a {
     font-size: 1.1rem;
 }
 
+dd {
+    text-align: initial;
+}
+
 // do not wrap the date in the post list
 table.post-list td:first-child {
     white-space: nowrap;
