@@ -162,6 +162,6 @@ ul {
     @extend %common-list;
 
     li::before {
-        content: "#";
+        content: "\25aa";
     }
 }
