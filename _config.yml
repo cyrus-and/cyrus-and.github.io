@@ -1,6 +1,9 @@
 title: Andrea Cardaci
 description: Personal website
-email: cyrus.and@gmail.com
+
+author:
+  name: Andrea Cardaci
+  email: cyrus.and@gmail.com
 
 permalink: pretty
 
