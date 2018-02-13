@@ -4,24 +4,6 @@
 @import 'common';
 @import 'monokai';
 
-// header and footer
-
-%bar {
-    padding: 10px;
-    background: $dark;
-    color: $accent;
-    text-align: center;
-
-    & > a {
-        display: inline-block;
-    }
-}
-
-#header {
-    @extend %bar;
-    border-bottom: 1px solid $accent;
-}
-
 #post-date {
     text-align: right;
     font-size: 0.8rem;
@@ -37,11 +19,6 @@ table#advisory-header {
         // used to set the column alignment
         display: none;
     }
-}
-
-#footer {
-    @extend %bar;
-    border-top: 1px solid $accent;
 }
 
 // footnotes
