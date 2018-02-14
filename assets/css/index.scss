@@ -5,7 +5,7 @@
 
 h1 {
     font-size: 2.5rem;
-    margin: 30px 0;
+    margin: 1.25em 0;
 }
 
 h2 {
@@ -14,6 +14,10 @@ h2 {
 
 a {
     font-size: 1.1rem;
+}
+
+dt {
+    margin-top: 0.5em;
 }
 
 dd {
@@ -25,7 +29,7 @@ table.post-list {
         white-space: nowrap;
         color: $faint;
         font-size: 0.8rem;
-        padding-right: 10px;
+        padding-right: 0.75em;
         text-align: right;
     }
 

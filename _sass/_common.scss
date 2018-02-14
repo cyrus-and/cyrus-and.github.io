@@ -12,8 +12,8 @@ $indentation: 30px;
 $container-padding: 10px;
 
 @mixin faint-highlighting($color, $swap: false) {
-    padding: 2px 4px;
-    border-radius: 4px;
+    padding: 0.15em 0.25em;
+    border-radius: 0.25em;
 
     $color1: darken(desaturate($color, 40%), 0%);
     $color2: darken(desaturate($color, 40%), 45%);
@@ -120,7 +120,6 @@ dl {
     dt {
         color: $emphasis;
         font-weight: bold;
-        margin-top: 10px;
     }
     dd {
         margin-left: $indentation;

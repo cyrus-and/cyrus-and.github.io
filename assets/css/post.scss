@@ -12,7 +12,7 @@
 
 table#advisory-header {
     margin: 0 auto;
-    border-spacing: 10px 5px;
+    border-spacing: 0.75em 0.25em;
 
     thead {
         // XXX hack needed by kramdown to hide the table head when it is only
@@ -33,7 +33,7 @@ table#advisory-header {
     position: relative;
 
     p {
-        margin: 5px 0;
+        margin: 0.5em 0;
     }
 
     li:target {
@@ -57,7 +57,7 @@ sup {
     font-size: 0.625rem;
 
     a.footnote {
-        margin: 2px;
+        margin: 0 0.2em;
     }
 
     &:target a.footnote {
