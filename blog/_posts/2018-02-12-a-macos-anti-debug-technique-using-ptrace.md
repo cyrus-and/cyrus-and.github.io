@@ -1,6 +1,6 @@
 ---
 title: A macOS anti-debug technique using ptrace
-tags: [macOS, ptrace, dtrace, lldb, debug]
+tags: [macOS, ptrace, dtrace, lldb, dyld, debug]
 ---
 
 This post was initially a StackOverflow [answer] for a question which I stumbled upon when trying to reverse a macOS Objective-C executable (henceforth, `the-program`) and faced, apparently, the same issue.
