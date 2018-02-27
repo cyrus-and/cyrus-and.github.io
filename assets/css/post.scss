@@ -81,7 +81,9 @@ $column-width: 800px;
 
 @media (max-width: $column-width - 1) {
     pre {
-        margin: 0 - $container-padding;
+        $anti-margin: 0 - $container-padding;
+        margin-left: $anti-margin;
+        margin-right: $anti-margin;
     }
 }
 
