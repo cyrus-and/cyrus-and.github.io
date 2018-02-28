@@ -9,9 +9,18 @@
         <meta name="description" content="{{ page.description }}">
         {% endif %}
 
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@{{ site.author.twitter }}">
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+        <meta property="og:title" content="{{ page.title }}">
+        <meta property="og:image" content="{{ site.url }}/assets/img/icon.png">
+        {% if page.description %}
+        <meta property="og:description" content="{{ page.description }}">
+        {% endif %}
+
         {% feed_meta %}
 
-        <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADAAgMAAAAvsoSUAAAACVBMVEUAAADSaR6Y+5gC7as8AAAANElEQVRo3u3LMQEAAAgDIEta0pRW0HvwU/1UgiAIgiAIgiDEBgAAgKt5EgRBEARBEAQhNiynwvSm7WpaBgAAAABJRU5ErkJggg==">
+        <link rel="icon" href="/assets/img/icon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
         <meta name="theme-color" content="#000000">
 
