@@ -5,7 +5,9 @@
 
 h1 {
     font-size: 2.5rem;
-    margin: 1.25em 0;
+    // XXX avoid margin collapsing
+    padding: 1.25em 0;
+    margin: 0;
 }
 
 h2 {

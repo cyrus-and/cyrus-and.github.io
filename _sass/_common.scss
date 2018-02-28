@@ -30,6 +30,7 @@ $container-padding: 10px;
 html {
     // REMs are relative to this
     font-size: 16px; // needed for <code>
+    background: $dark;
 }
 
 body {
