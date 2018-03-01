@@ -115,6 +115,18 @@ blockquote {
     background: $accent;
 }
 
+// selection
+
+@mixin selection {
+    ::selection { @content; }
+    ::-moz-selection { @content; }
+}
+
+@include selection {
+    background: $foreground;
+    color: $background;
+}
+
 // lists
 
 dl {
