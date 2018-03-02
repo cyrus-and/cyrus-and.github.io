@@ -58,6 +58,15 @@ sup {
 
     a.footnote {
         margin: 0 0.2em;
+        text-decoration: none;
+
+        &::before {
+            content: "[";
+        }
+
+        &::after {
+            content: "]";
+        }
     }
 
     &:target a.footnote {
