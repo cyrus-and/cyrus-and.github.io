@@ -2,7 +2,7 @@ $foreground: #a5a5a5;
 $background: #000000;
 $accent: #d2691e;
 $section: #98fb98;
-$emphasis: #eedd82;
+$bright: #eedd82;
 $link: #00ffff;
 $code: #ff00ff;
 $dark: #111111;
@@ -61,8 +61,13 @@ p, li, dd, dt {
     line-height: 1.618em;
 }
 
+em {
+    font-style: normal;
+    color: $faint;
+}
+
 strong {
-    color: $emphasis;
+    color: $bright;
 }
 
 a:link, a:visited {
@@ -131,7 +136,7 @@ blockquote {
 
 dl {
     dt {
-        color: $emphasis;
+        color: $bright;
         font-weight: bold;
     }
     dd {
@@ -156,7 +161,7 @@ dl {
             box-sizing: border-box;
             width: $indentation;
             padding-right: 10px;
-            color: $emphasis;
+            color: $bright;
             text-align: right;
         }
     }
