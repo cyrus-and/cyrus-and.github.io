@@ -21,6 +21,26 @@ table#advisory-header {
     }
 }
 
+// permalink on headings
+
+h2, h3, h4, h5, h5 {
+    .permalink {
+        margin-left: 0.5em;
+        text-decoration: none;
+        visibility: hidden;
+
+        &::before {
+            content: "\00b6";
+        }
+    }
+
+    &:hover {
+        .permalink {
+            visibility: visible;
+        }
+    }
+}
+
 // footnotes
 
 %link-outline {
