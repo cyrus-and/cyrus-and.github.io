@@ -1,3 +1,8 @@
+- name: GTFOBins
+  link: GTFOBins/GTFOBins.github.io
+  brief: Curated list of Unix binaries that can be exploited to bypass system security restrictions
+  tags: [binaries, exploited, security]
+
 - name: gdb-dashboard
   link: cyrus-and/gdb-dashboard
   brief: Modular visual interface for GDB in Python
@@ -22,6 +27,11 @@
   link: cyrus-and/mysql-unsha1
   brief: Authenticate against a MySQL server without knowing the cleartext password
   tags: [MySQL, password]
+
+- name: comb
+  link: cyrus-and/comb
+  brief: Interactive grep annotation tool for manual static analysis in Emacs Lisp
+  tags: [grep, static analysis, Emacs]
 
 - name: zoom
   link: cyrus-and/zoom
