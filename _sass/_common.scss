@@ -73,12 +73,12 @@ strong {
 a:link, a:visited {
     @include faint-highlighting($link);
     font-weight: bold;
+    text-decoration: none;
 }
 
 a:hover, a:active {
     @include faint-highlighting($link, true);
     font-weight: bold;
-    text-decoration: none;
 }
 
 code {
