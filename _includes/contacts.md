@@ -2,6 +2,6 @@
 
 ## Contacts
 
-[e-mail](mailto:{{ site.author.email }})
+**Drop** me an [email](mailto:{{ site.author.email }}).
 
 </div>
