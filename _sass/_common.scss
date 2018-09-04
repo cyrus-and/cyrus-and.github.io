@@ -128,8 +128,8 @@ blockquote {
 }
 
 @include selection {
-    background: $foreground;
-    color: $background;
+    background: transparentize($faint, 0.75);
+    color: $accent;
 }
 
 // lists
