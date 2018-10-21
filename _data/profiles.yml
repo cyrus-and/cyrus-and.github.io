@@ -3,6 +3,11 @@
   brief: Code goes here
   tags: [Code]
 
+- name: Hack The Box
+  url: https://www.hackthebox.eu/profile/47492
+  brief: Pwning boxes for fun
+  tags: [Pwning]
+
 - name: Twitter
   url: https://twitter.com/cyrus_and
   brief: Social stuff
