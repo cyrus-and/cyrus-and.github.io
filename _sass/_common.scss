@@ -10,6 +10,7 @@ $faint: #666666;
 
 $indentation: 30px;
 $container-padding: 10px;
+$font-family: Menlo, monospace;
 
 @mixin faint-highlighting($color, $swap: false) {
     padding: 0.15em 0.25em;
@@ -34,7 +35,7 @@ html {
 }
 
 body {
-    font-family: Montserrat, sans, sans-serif;
+    font-family: $font-family;
     color: $foreground;
     background: $background;
     overflow-x: hidden;
@@ -83,6 +84,7 @@ a:hover, a:active {
 
 code {
     @include faint-highlighting($code);
+    font-family: $font-family;
 }
 
 a code {
