@@ -77,7 +77,7 @@ $hard-swap-margin: 100px;
     #container {
         width: $two-column-width - $hard-swap-margin;
         column-count: 2;
-        column-gap: 10px;
+        column-gap: 50px;
 
         .section {
             break-inside: avoid;
