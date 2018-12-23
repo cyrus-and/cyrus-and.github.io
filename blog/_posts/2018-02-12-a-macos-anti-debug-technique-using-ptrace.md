@@ -1,5 +1,6 @@
 ---
 title: A macOS anti-debug technique using ptrace
+description: A subtlety of the ptrace system call can be used to prevent a program from being debugged on macOS.
 tags: [macOS, ptrace, dtrace, lldb, dyld, debug]
 ---
 

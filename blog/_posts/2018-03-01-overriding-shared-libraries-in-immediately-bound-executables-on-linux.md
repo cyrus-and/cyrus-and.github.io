@@ -1,5 +1,6 @@
 ---
 title: Overriding shared libraries in immediately-bound executables on Linux
+description: How to override shared libraries when the program employs symbol versioning and other non standard linking options.
 tags: [shared, Linux, ld]
 ---
 

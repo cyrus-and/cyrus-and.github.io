@@ -1,5 +1,6 @@
 ---
 title: Authenticate against a MySQL server without knowing the cleartext password
+description: The default authentication method allows an attacker to log into a MySQL server by only witnessing to the TCP handshake and knowing the hashed password.
 tags: [MySQL, password]
 ---
 
