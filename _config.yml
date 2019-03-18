@@ -11,9 +11,13 @@ permalink: pretty
 
 defaults:
   - values:
-      layout: "post"
+      layout: post
 
-exclude: ["/Gemfile", "/Makefile", "/README.md", "/CNAME"]
+exclude:
+  - /Gemfile
+  - /Makefile
+  - /README.md
+  - /CNAME
 
 kramdown:
   parse_block_html: true
