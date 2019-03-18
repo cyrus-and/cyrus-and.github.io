@@ -6,21 +6,33 @@ body {
     font-size: 10pt;
 }
 
-a[href]:after {
-    // TODO basename? is it even possible?
-    content: " {" attr(href) "}";
-    font-weight: normal;
+h1 {
+    text-align: center;
+}
+
+p, li, dd, dt {
+    text-align: justify;
 }
 
 a:link, a:visited {
     color: #000000;
-    text-decoration: none;
 }
 
 dd {
     margin-bottom: 2.5mm;
 }
 
-#header, #footer {
+pre {
+    white-space: pre-wrap;
+    word-break: break-all;
+    padding: 4pt;
+    border: 1pt solid #000000;
+}
+
+table {
+    margin: 0 auto;
+}
+
+#header, #footer, #post-info, .permalink {
     display: none;
 }
