@@ -23,6 +23,11 @@
   brief: Self-contained C/C++ profiler library for Linux
   tags: [C/C++ profiler, Linux]
 
+- name: fracker
+  link: cyrus-and/fracker
+  brief: PHP function tracker
+  tags: [PHP, tracker]
+
 - name: mysql-unsha1
   link: cyrus-and/mysql-unsha1
   brief: Authenticate against a MySQL server without knowing the cleartext password
