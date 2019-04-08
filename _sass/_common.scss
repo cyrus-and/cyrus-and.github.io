@@ -79,6 +79,10 @@ a:link, a:visited {
 a:hover, a:active {
     @include faint-highlighting($link, true);
     font-weight: bold;
+
+    & * {
+        color: inherit;
+    }
 }
 
 code {
