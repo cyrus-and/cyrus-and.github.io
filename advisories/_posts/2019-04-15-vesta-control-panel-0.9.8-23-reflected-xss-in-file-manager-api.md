@@ -9,6 +9,7 @@ tags: [CVE, Vesta Control Panel, XSS]
 |          **Author** | [{{ site.author.name }}](mailto:{{ site.author.email }}) |
 |         **Product** | [Vesta Control Panel](https://vestacp.com/)              |
 | **Tested versions** | 0.9.8-23                                                 |
+|       **CVE entry** | [CVE-2019-9841][cve]                                     |
 |---------------------+----------------------------------------------------------|
 {:#advisory-header}
 
@@ -98,10 +99,12 @@ uid=0(root) gid=0(root) groups=0(root)
 : Disclosed to the VestaCP team.
 
 2019-03-15
-: MITRE assigns CVE-2019-9841 to this vulnerability.
+: MITRE assigns [CVE-2019-9841][cve] to this vulnerability.
 
 2019-04-12
 : The VestaCP team [fixes](https://github.com/serghey-rodin/vesta/commit/c28c5d29a3c61bc8110c11349e3f2309cd537cfa) the vulnerability.
 
 2019-04-15
 : The VestaCP team [releases](https://github.com/serghey-rodin/vesta/commit/e674bf14fd401f419223f1dd06a6e381a3c188a2) version 0.9.8-24.
+
+[cve]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9841
