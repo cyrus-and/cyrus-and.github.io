@@ -1,5 +1,5 @@
 ---
-title: '[CVE-2019-9841] Vesta Control Panel 0.9.8-23 — Reflected XSS in the file manager API'
+title: '[CVE-2019-9841] Vesta Control Panel 0.9.8-23 — Reflected XSS in file manager API'
 tags: [CVE, Vesta Control Panel, XSS]
 ---
 
