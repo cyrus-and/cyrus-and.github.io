@@ -4,12 +4,12 @@ tags: [CVE, Vesta Control Panel, XSS]
 ---
 
 |||
-|----------------------:+----------------------------------------------------------|
-|        **Discovered** | 2019-03-13                                               |
-|            **Author** | [{{ site.author.name }}](mailto:{{ site.author.email }}) |
-|           **Product** | [Vesta Control Panel](https://vestacp.com/)              |
-| **Tested versions**   | 0.9.8-23                                                 |
-|-----------------------+----------------------------------------------------------|
+|--------------------:+----------------------------------------------------------|
+|      **Discovered** | 2019-03-13                                               |
+|          **Author** | [{{ site.author.name }}](mailto:{{ site.author.email }}) |
+|         **Product** | [Vesta Control Panel](https://vestacp.com/)              |
+| **Tested versions** | 0.9.8-23                                                 |
+|---------------------+----------------------------------------------------------|
 {:#advisory-header}
 
 ## Abstract
