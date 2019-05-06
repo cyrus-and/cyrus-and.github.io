@@ -10,6 +10,7 @@ tags: [CVE, Vesta Control Panel, XSS]
 |          **Author** | [{{ site.author.name }}](mailto:{{ site.author.email }}) |
 |         **Product** | [Vesta Control Panel](https://vestacp.com/)              |
 | **Tested versions** | 0.9.8-23                                                 |
+|                     | *(prior versions may also be affected)*                  |
 |       **CVE entry** | [CVE-2019-9841][cve]                                     |
 |---------------------+----------------------------------------------------------|
 {:#advisory-header}

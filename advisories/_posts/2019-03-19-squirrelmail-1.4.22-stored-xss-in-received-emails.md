@@ -12,6 +12,7 @@ tags: [SquirrelMail, XSS, JavaScript]
 | **Tested versions** | 1.4.22                                                   |
 |                     | 1.4.23 (`SM-1_4-STABLE` @ r14746)                        |
 |                     | 1.5.2 (`trunk` @ r14747)                                 |
+|                     | *(prior versions may also be affected)*                  |
 |---------------------+----------------------------------------------------------|
 {:#advisory-header}
 
