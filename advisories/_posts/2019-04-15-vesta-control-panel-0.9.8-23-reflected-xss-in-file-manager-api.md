@@ -2,18 +2,18 @@
 title: '[CVE-2019-9841] Vesta Control Panel 0.9.8-23 — Reflected XSS in file manager API'
 description: The insufficient output sanitization and inappropriate content type of the responses of the file manager API allows to run arbitrary JavaScript code in the context of the web application.
 tags: [CVE, Vesta Control Panel, XSS]
+advisory:
+  discovered: 2019-03-13
+  product:
+    name: Vesta Control Panel
+    url: https://vestacp.com/
+  versions:
+    - 0.9.8-23
+  tested_versions_only: false
+  cve: CVE-2019-9841
 ---
 
-|||
-|--------------------:+----------------------------------------------------------|
-|      **Discovered** | 2019-03-13                                               |
-|          **Author** | [{{ site.author.name }}](mailto:{{ site.author.email }}) |
-|         **Product** | [Vesta Control Panel](https://vestacp.com/)              |
-| **Tested versions** | 0.9.8-23                                                 |
-|                     | *(prior versions may also be affected)*                  |
-|       **CVE entry** | [CVE-2019-9841][cve]                                     |
-|---------------------+----------------------------------------------------------|
-{:#advisory-header}
+{% include advisory-header.md %}
 
 ## Abstract
 

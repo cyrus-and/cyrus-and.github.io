@@ -2,19 +2,19 @@
 title: SquirrelMail 1.4.22 — Stored XSS in received emails
 description: Improper sanitization causes malicious JavaScript code in received emails to be executed when the message is displayed.
 tags: [SquirrelMail, XSS, JavaScript]
+advisory:
+  discovered: 2017-12-23
+  product:
+    name: SquirrelMail
+    url: https://squirrelmail.org
+  versions:
+    - 1.4.22
+    - 1.4.23 (`SM-1_4-STABLE` @ r14746)
+    - 1.5.2 (`trunk` @ r14747)
+  tested_versions_only: false
 ---
 
-|||
-|--------------------:+----------------------------------------------------------|
-|      **Discovered** | 2017-12-23                                               |
-|          **Author** | [{{ site.author.name }}](mailto:{{ site.author.email }}) |
-|         **Product** | [SquirrelMail](https://squirrelmail.org)                 |
-| **Tested versions** | 1.4.22                                                   |
-|                     | 1.4.23 (`SM-1_4-STABLE` @ r14746)                        |
-|                     | 1.5.2 (`trunk` @ r14747)                                 |
-|                     | *(prior versions may also be affected)*                  |
-|---------------------+----------------------------------------------------------|
-{:#advisory-header}
+{% include advisory-header.md %}
 
 ## Abstract
 
