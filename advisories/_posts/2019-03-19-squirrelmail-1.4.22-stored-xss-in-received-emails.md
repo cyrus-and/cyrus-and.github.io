@@ -14,8 +14,6 @@ advisory:
   tested_versions_only: false
 ---
 
-{% include advisory-header.md %}
-
 ## Abstract
 
 SquirrelMail allows to display HTML messages provided that *non-safe* fragments are redacted. An input sanitization vulnerability that can be exploited to perform stored cross-site scripting (XSS) attacks has been discovered.

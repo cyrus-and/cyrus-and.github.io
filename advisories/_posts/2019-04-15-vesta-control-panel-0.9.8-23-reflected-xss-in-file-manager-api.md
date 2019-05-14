@@ -13,8 +13,6 @@ advisory:
   cve: CVE-2019-9841
 ---
 
-{% include advisory-header.md %}
-
 ## Abstract
 
 The insufficient output sanitization and inappropriate content type of the responses of the file manager API allows to run arbitrary JavaScript code in the context of the web application. This allows an attacker to impersonate the users of the control panel by tricking them to follow a specially crafted link while authenticated to the web application.
