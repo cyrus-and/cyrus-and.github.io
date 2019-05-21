@@ -2,7 +2,7 @@ $foreground: #cccccc;
 $background: #000000;
 $accent: #d2691e;
 $section: #98fb98;
-$bright: #eedd82;
+$emphasis: #eedd82;
 $link: #00ffff;
 $code: #ff00ff;
 $dark: #111111;
@@ -67,7 +67,7 @@ em {
 }
 
 strong {
-    color: $bright;
+    color: $emphasis;
 }
 
 a:link, a:visited {
@@ -140,7 +140,7 @@ blockquote {
 
 dl {
     dt {
-        color: $bright;
+        color: $emphasis;
         font-weight: bold;
     }
     dd {
@@ -165,7 +165,7 @@ dl {
             box-sizing: border-box;
             width: $indentation;
             padding-right: 10px;
-            color: $bright;
+            color: $emphasis;
             text-align: right;
         }
     }
