@@ -96,11 +96,10 @@ a code {
 }
 
 pre {
-    font-size: 0.85rem;
-    background: $dark !important;
+    font-size: 0.95rem;
     padding: 10px;
-    overflow-x: auto;
-    word-break: initial;
+    white-space: pre-wrap;
+    word-break: break-all;
 }
 
 blockquote {
