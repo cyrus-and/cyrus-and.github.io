@@ -40,4 +40,8 @@ table {
 .footnotes {
     font-size: 80%;
     margin-top: 1cm;
+
+    ol {
+        padding-inline-start: 2em;
+    }
 }
