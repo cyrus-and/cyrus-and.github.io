@@ -99,7 +99,7 @@ uid=0(root) gid=0(root) groups=0(root)
 : Disclosed to the VestaCP team.
 
 2019-03-15
-: MITRE assigns [CVE-2019-9841](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9841) to this vulnerability.
+: MITRE assigns [{{ page.advisory.cve }}](https://cve.mitre.org/cgi-bin/cvename.cgi?name={{ page.advisory.cve }}) to this vulnerability.
 
 2019-04-12
 : The VestaCP team [fixes](https://github.com/serghey-rodin/vesta/commit/c28c5d29a3c61bc8110c11349e3f2309cd537cfa) the vulnerability.
