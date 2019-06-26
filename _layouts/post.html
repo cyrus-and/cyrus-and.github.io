@@ -28,4 +28,15 @@ layout: common
      link.href = `#${heading.id}`;
      heading.appendChild(link);
  });
+
+ // add download links (add the following after the block {: download="filename.ext"})
+ document.querySelectorAll('div[download]').forEach((node) => {
+     const name = node.getAttribute('download');
+     const blob = new Blob([node.innerText]);
+     const a = document.createElement('a');
+     a.setAttribute('href', URL.createObjectURL(blob));
+     a.setAttribute('download', name);
+     a.appendChild(document.createTextNode(name));
+     node.prepend(a);
+ });
 </script>
