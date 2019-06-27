@@ -9,7 +9,6 @@ advisory:
     - 1.4.22
     - 1.4.23 (`SM-1_4-STABLE` @ r14746)
     - 1.5.2 (`trunk` @ r14747)
-  tested_versions_only: false
 ---
 
 ## Abstract

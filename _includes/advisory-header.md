@@ -14,10 +14,3 @@
 | **CVE entry** | [{{ page.advisory.cve }}](https://cve.mitre.org/cgi-bin/cvename.cgi?name={{ page.advisory.cve }}) |
 {%- endif %}
 {:#advisory-header}
-
-{% unless page.advisory.tested_versions_only %}
-|                                        |
-|:--------------------------------------:|
-| *Other versions may also be affected.* |
-{:#advisory-header}
-{% endunless %}

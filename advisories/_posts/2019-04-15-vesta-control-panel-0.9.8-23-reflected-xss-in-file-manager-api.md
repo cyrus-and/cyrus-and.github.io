@@ -7,7 +7,6 @@ advisory:
   product: '[Vesta Control Panel](https://vestacp.com/)'
   versions:
     - 0.9.8-23
-  tested_versions_only: false
   cve: CVE-2019-9841
 ---
 
