@@ -1,8 +1,8 @@
-|                |                                                                     |
-|---------------:|---------------------------------------------------------------------|
-| **Discovered** | {{ page.advisory.discovered}}                                       |
-|     **Author** | [{{ site.author.name }}](mailto:{{ site.author.email }})            |
-|    **Product** | [{{ page.advisory.product.name }}]({{ page.advisory.product.url }}) |
+|                |                                                          |
+|---------------:|----------------------------------------------------------|
+| **Discovered** | {{ page.advisory.discovered}}                            |
+|     **Author** | [{{ site.author.name }}](mailto:{{ site.author.email }}) |
+|    **Product** | {{ page.advisory.product }}                              |
 {% for version in page.advisory.versions %}
 {%- if forloop.first -%}
 | **Tested versions** | {{ version }} |

@@ -4,9 +4,7 @@ description: Improper sanitization causes malicious JavaScript code in received 
 tags: [SquirrelMail, XSS, JavaScript]
 advisory:
   discovered: 2017-12-23
-  product:
-    name: SquirrelMail
-    url: https://squirrelmail.org
+  product: '[SquirrelMail](https://squirrelmail.org)'
   versions:
     - 1.4.22
     - 1.4.23 (`SM-1_4-STABLE` @ r14746)
