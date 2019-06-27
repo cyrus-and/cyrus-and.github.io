@@ -33,6 +33,10 @@ layout: common
  document.querySelectorAll('div[download]').forEach((node) => {
      const name = node.getAttribute('download');
      const blob = new Blob([node.innerText]);
+     const span = document.createElement('span');
+     span.className = 'download-label';
+     span.appendChild(document.createTextNode(name));
+     node.prepend(span);
      const a = document.createElement('a');
      a.setAttribute('href', URL.createObjectURL(blob));
      a.setAttribute('download', name);

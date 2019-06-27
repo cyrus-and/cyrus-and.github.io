@@ -104,6 +104,11 @@ sup {
     border-radius: 0;
 }
 
+// hide download label for screen media
+.download-label {
+    display: none;
+}
+
 // layout
 
 $column-width: 1000px;
