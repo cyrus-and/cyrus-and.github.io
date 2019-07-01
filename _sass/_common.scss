@@ -12,6 +12,7 @@ $bright: #ffffff;
 $indentation: 30px;
 $container-padding: 10px;
 $font-family: Menlo, monospace;
+$justification-width: 500px;
 
 @mixin faint-highlighting($color, $swap: false) {
     padding: 0.08em 0.16em;
@@ -26,6 +27,12 @@ $font-family: Menlo, monospace;
     } @else {
         color: $color1;
         background: $color2;
+    }
+}
+
+@media (min-width: $justification-width) {
+    p, li, dd, dt {
+        text-align: justify;
     }
 }
 
