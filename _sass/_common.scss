@@ -157,6 +157,10 @@ dl {
         counter-increment: item;
         display: table-row;
 
+        p {
+            margin: 0.5em 0;
+        }
+
         &::before {
             display: table-cell;
             box-sizing: border-box;
