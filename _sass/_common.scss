@@ -14,8 +14,8 @@ $container-padding: 10px;
 $font-family: Menlo, monospace;
 
 @mixin faint-highlighting($color, $swap: false) {
-    padding: 0.15em 0.25em;
-    border-radius: 0.25em;
+    padding: 0.08em 0.16em;
+    border-radius: 0.16em;
 
     $color1: darken(desaturate($color, 40%), 0%);
     $color2: darken(desaturate($color, 40%), 45%);
