@@ -12,6 +12,7 @@
 table#advisory-header {
     margin: 0 auto;
     border-spacing: 0.75em 0.25em;
+    word-break: initial;
 
     thead {
         // XXX hack needed by kramdown to hide the table head when it is only
