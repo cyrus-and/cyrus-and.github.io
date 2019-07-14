@@ -114,14 +114,6 @@ sup {
 
 $column-width: 1000px;
 
-@media (max-width: $column-width - 1) {
-    pre {
-        $anti-margin: 0 - $container-padding;
-        margin-left: $anti-margin;
-        margin-right: $anti-margin;
-    }
-}
-
 @media (min-width: $column-width) {
     #container {
         margin: 0 auto;
