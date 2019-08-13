@@ -16,7 +16,7 @@ The insufficient input sanitization used by the `v-list-user` shell utility allo
 
 This coupled with the legitimate ability of registered users to upload files in certain locations on the server grants an attacker the ability to perform privilege escalation from a registered user to `root` by simply requesting a password reset.
 
-This possibly impacts the [HestiaCP](https://www.hestiacp.com/) project too as it is a fork of VestaCP.
+[HestiaCP](https://www.hestiacp.com/) (an actively maintained fork of VestaCP) version 1.0.4 is also vulnerable but a fix has been promptly deployed in version 1.0.5.
 
 ## Details
 

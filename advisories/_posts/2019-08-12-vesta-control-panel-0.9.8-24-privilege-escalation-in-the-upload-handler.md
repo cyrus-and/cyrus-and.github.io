@@ -14,7 +14,7 @@ advisory:
 
 The insufficient shell escaping mechanism used during the invocation of the `exec` PHP function allows a registered user to run arbitrary system commands as the `admin` user, to whom VestaCP grants full access. A malicious registered user can thus escalate its privileges up to `root` by submitting a POST request to the web application.
 
-This possibly impacts the [HestiaCP](https://www.hestiacp.com/) project too as it is a fork of VestaCP.
+[HestiaCP](https://www.hestiacp.com/) (an actively maintained fork of VestaCP) version 1.0.4 is also vulnerable but a fix has been promptly deployed in version 1.0.5.
 
 ## Details
 
