@@ -74,3 +74,6 @@ uid=0(root) gid=0(root) groups=0(root)
 
 2019-07-31
 : The VestaCP team [fixes](https://github.com/serghey-rodin/vesta/commit/bb44f4197b4e5de219bc00197f89517c7e92bc2a) the vulnerability.
+
+2019-08-15
+: The VestaCP team [releases](https://github.com/serghey-rodin/vesta/commit/868dd8b146e76ea3c83c26855ae2f60b22d989d2) version 0.9.8-25.

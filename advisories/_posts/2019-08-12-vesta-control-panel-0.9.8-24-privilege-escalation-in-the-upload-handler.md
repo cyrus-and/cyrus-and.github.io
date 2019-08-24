@@ -175,3 +175,6 @@ exec (VESTA_CMD."v-change-mail-account-password '".$v_user."' ".$v_domain." ".$v
 
 2019-08-07
 : The VestaCP team [fixes](https://github.com/serghey-rodin/vesta/commit/b17b4b205df0c01dada54d9684cfaa94b924064a) the vulnerability.
+
+2019-08-15
+: The VestaCP team [releases](https://github.com/serghey-rodin/vesta/commit/868dd8b146e76ea3c83c26855ae2f60b22d989d2) version 0.9.8-25.
