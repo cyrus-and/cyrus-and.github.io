@@ -13,6 +13,21 @@
   brief: Chrome Debugging Protocol interface for Node.js
   tags: [Chrome Debugging Protocol, Node.js]
 
+- name: mysql-unsha1
+  link: cyrus-and/mysql-unsha1
+  brief: Authenticate against a MySQL server without knowing the cleartext password
+  tags: [MySQL, password]
+
+- name: fracker
+  link: cyrus-and/fracker
+  brief: PHP function tracker
+  tags: [PHP, tracker]
+
+- name: zizzania
+  link: cyrus-and/zizzania
+  brief: Automated DeAuth attack
+  tags: [DeAuth]
+
 - name: chrome-har-capturer
   link: cyrus-and/chrome-har-capturer
   brief: Capture HAR files from a remote Chrome instance
@@ -22,16 +37,6 @@
   link: cyrus-and/prof
   brief: Self-contained C/C++ profiler library for Linux
   tags: [C/C++ profiler, Linux]
-
-- name: fracker
-  link: cyrus-and/fracker
-  brief: PHP function tracker
-  tags: [PHP, tracker]
-
-- name: mysql-unsha1
-  link: cyrus-and/mysql-unsha1
-  brief: Authenticate against a MySQL server without knowing the cleartext password
-  tags: [MySQL, password]
 
 - name: comb
   link: cyrus-and/comb
@@ -52,11 +57,6 @@
   link: cyrus-and/trace
   brief: Start or attach to a process and monitor a customizable set of metrics
   tags: [monitor, metrics]
-
-- name: zizzania
-  link: cyrus-and/zizzania
-  brief: Automated DeAuth attack
-  tags: [DeAuth]
 
 - name: gdb
   link: cyrus-and/gdb
