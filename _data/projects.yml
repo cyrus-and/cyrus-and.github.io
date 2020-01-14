@@ -40,8 +40,8 @@
 
 - name: comb
   link: cyrus-and/comb
-  brief: Interactive grep annotation tool for manual static analysis in Emacs Lisp
-  tags: [grep, static analysis, Emacs]
+  brief: Interactive code auditing and grep tool in Emacs Lisp
+  tags: [auditing, grep, Emacs]
 
 - name: zoom
   link: cyrus-and/zoom
