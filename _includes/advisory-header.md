@@ -10,7 +10,11 @@
 || {{ version }} |
 {%- endif -%}
 {% endfor %}
-{%- if page.advisory.cve %}
-| **CVE entry** | [{{ page.advisory.cve }}](https://cve.mitre.org/cgi-bin/cvename.cgi?name={{ page.advisory.cve }}) |
-{%- endif %}
+{% for cve in page.advisory.cve %}
+{%- if forloop.first -%}
+| **CVE** | [{{ cve }}](https://cve.mitre.org/cgi-bin/cvename.cgi?name={{ cve }}) |
+{%- else %}
+|| [{{ cve }}](https://cve.mitre.org/cgi-bin/cvename.cgi?name={{ cve }}) |
+{%- endif -%}
+{% endfor %}
 {:#advisory-header}
