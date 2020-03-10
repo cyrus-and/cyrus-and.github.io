@@ -1,7 +1,7 @@
 ---
 title: '[CVE-2020-8518] Horde Groupware Webmail Edition 5.2.22 — RCE in CSV data import'
 description: A vulnerability in the handling of CSV data import allows authenticated users to inject arbitrary PHP code thus achieving RCE on the server hosting the web application.
-tags: [Horde, RCE, CSV]
+tags: [CVE, Horde, RCE, CSV]
 advisory:
   discovered: 2019-06-19
   product: '[Horde Groupware Webmail Edition](https://www.horde.org/apps/webmail)'

@@ -1,7 +1,7 @@
 ---
 title: '[CVE-2019-12792] Vesta Control Panel 0.9.8-24 — Privilege escalation in the upload handler'
 description: Privilege escalation to root can be achieved by a regular user via the file upload handler exploiting an insufficient shell escaping mechanism.
-tags: [Vesta Control Panel, Privilege escalation, upload]
+tags: [CVE, Vesta Control Panel, Privilege escalation, upload]
 advisory:
   discovered: 2019-03-15
   product: '[Vesta Control Panel](https://vestacp.com/)'

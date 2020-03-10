@@ -1,7 +1,7 @@
 ---
 title: '[CVE-2019-12791] Vesta Control Panel 0.9.8-24 — Privilege escalation in the password reset form'
 description: Privilege escalation to root can be achieved by a regular user via the password reset form exploiting a directory traversal vulnerability.
-tags: [Vesta Control Panel, Privilege escalation, password reset]
+tags: [CVE, Vesta Control Panel, Privilege escalation, password reset]
 advisory:
   discovered: 2019-04-17
   product: '[Vesta Control Panel](https://vestacp.com/)'
