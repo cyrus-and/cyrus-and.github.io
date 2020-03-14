@@ -191,6 +191,7 @@ class MetasploitModule < Msf::Exploit::Remote
         'License'        => MSF_LICENSE,
         'Author'         => ['Andrea Cardaci <cyrus.and@gmail.com>'],
         'References'     => [
+          ['CVE', '2020-8518'],
           ['URL', 'https://cardaci.xyz/advisories/2020/03/10/horde-groupware-webmail-edition-5.2.22-rce-in-csv-data-import/']
         ],
         'DisclosureDate' => '2020-02-07',
