@@ -8,7 +8,7 @@ tags: [MSc, Pisa]
 {% include bio.md %}
 {% include advisories.md %}
 {% include blog.md %}
-{% include contacts.md %}
 {% include profiles.md %}
-{% include meta.md %}
+{% include contacts.md %}
 {% include projects.md %}
+{% include meta.md %}
