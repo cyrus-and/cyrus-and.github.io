@@ -167,7 +167,7 @@ curl -b "$JAR" "$BASE/mnemo/data.php" \
 
 ### Metasploit module
 
-A Metasploit module is provided for convenience:
+A Metasploit module is provided for convenience[^module]:
 
 ```ruby
 class MetasploitModule < Msf::Exploit::Remote
@@ -318,6 +318,8 @@ set password password
 run
 ```
 
+[^module]: This module (with some modifications) is [now](https://github.com/rapid7/metasploit-framework/pull/13082#issuecomment-602563735) part of Metasploit.
+
 ## Timeline
 
 2019-06-20
@@ -334,3 +336,6 @@ run
 
 2020-02-07
 : SSD publishes the [advisory](https://ssd-disclosure.com/archives/4097/ssd-advisory-horde-groupware-webmail-edition-remote-code-execution).
+
+2020-03-23
+: Rapid7 adds the [module](https://github.com/rapid7/metasploit-framework/pull/13082) to Metasploit.
