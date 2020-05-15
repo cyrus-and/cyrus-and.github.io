@@ -2,6 +2,6 @@
 
 ## Bio
 
-{% include tagify.liquid text=page.description tags=page.tags %}
+Application **security** specialist at [SecureFlag](https://secureflag.com/).
 
 </div>

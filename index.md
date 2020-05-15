@@ -1,8 +1,7 @@
 ---
 layout: index
 title: Andrea Cardaci
-description: MSc student at the University of Pisa, Italy.
-tags: [MSc, Pisa]
+description: Personal home page, security advisories and projects.
 ---
 
 {% include bio.md %}
