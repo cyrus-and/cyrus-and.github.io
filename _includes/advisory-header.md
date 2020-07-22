@@ -1,3 +1,4 @@
+{:#advisory-header}
 |                |                                                          |
 |---------------:|----------------------------------------------------------|
 | **Discovered** | {{ page.advisory.discovered}}                            |
@@ -17,4 +18,3 @@
 || [{{ cve }}](https://cve.mitre.org/cgi-bin/cvename.cgi?name={{ cve }}) |
 {%- endif -%}
 {% endfor %}
-{:#advisory-header}
