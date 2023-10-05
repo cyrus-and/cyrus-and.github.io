@@ -147,8 +147,6 @@ $ ./anti-debug
 2018-02-10 21:59:32.638 anti-debug[4602:81365] -- MAIN
 
 $ lldb ./anti-debug
-(lldb) target create "./anti-debug"
-Current executable set to './anti-debug' (x86_64).
 (lldb) run
 Process 4605 launched: './anti-debug' (x86_64)
 2018-02-10 21:59:50.732396+0100 anti-debug[4605:81479] -- LOAD
