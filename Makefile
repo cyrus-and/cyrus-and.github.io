@@ -1,10 +1,20 @@
-.PHONY: serve serve-drafts bundle
+MAKEFLAGS += --always-make
 
-serve:
-	bundle exec jekyll serve --host 0.0.0.0
+NAME := cardaci.xyz
 
-serve-drafts:
-	bundle exec jekyll serve --host 0.0.0.0 --drafts
+run: build
+	docker run \
+		--rm \
+		--interactive \
+		--tty \
+		--publish 4000:4000 \
+		$(NAME)
 
-bundle:
-	bundle install
+
+build:
+	docker build \
+		--tag $(NAME) \
+		.
+
+clean:
+	docker rmi $(NAME)
