@@ -1,7 +1,7 @@
 - name: GTFOBins
   link: GTFOBins/GTFOBins.github.io
-  brief: Curated list of Unix binaries that can be exploited to bypass system security restrictions
-  tags: [binaries, exploited, security]
+  brief: Curated list of Unix-link executables that can be exploited to bypass system security restrictions
+  tags: [executables, exploited, security]
 
 - name: gdb-dashboard
   link: cyrus-and/gdb-dashboard
